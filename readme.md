@@ -10,46 +10,43 @@
 
 ## About
 
-See this app in action here:
-- [`clibard prompt`][promptVideo]
-- [`clibard chat`][chatVideo]
+<!-- See this app in action here:
+- [`cligpt prompt`][promptVideo]
+- [`cligpt chat`][chatVideo] -->
 
 This is a Google Bard CLI application interface.
 
 Core libs used
 
-- [Google Bard](https://github.com/thisago/bard) - Google Bard batchexecute implementation
-- [Gookie](https://github.com/thisago/gookie) - Google cookie getter
+- [DirtyGPT](https://github.com/thisago/dirtygpt) - Free amd dirty ChatGPT web implementation
 
 ## Setup
 
 You can install using nimble, the [Nim](https://nim-lang.org) package manager:
 
 ```bash
-nimble install clibard
+nimble install cligpt
 ```
 
-To Gookie be able to get your Google session, you'll need to install an client
-extension in your browser.
-See the [tutorial at Gookie repository](https://github.com/thisago/gookie#usage)
+In order to DirtyGPT work, you need to install the userscript client in your
+browser, in a userscript manager. See the [tutorial at DirtyGPT repository](https://github.com/thisago/dirtygpt#installation)
 
-Now, just [login into your Google account](https://accounts.google.com) and keep
-open the browser
+Then keep open a logged tab at [ChatGPT](https://chat.openai.com) in your browser
 
 ## Usage
 
 **Help**
 
 ```
-$ clibard --help
+$ cligpt --help
 
-Google Bard CLI
+ChatGPT CLI
 Usage:
-  clibard {SUBCMD}  [sub-command options & parameters]
+  cligpt {SUBCMD}  [sub-command options & parameters]
 where {SUBCMD} is one of:
   help    print comprehensive or per-cmd help
-  prompt  Prompts to Google Bard
-  chat    Start chat with Google Bard
+  prompt  Prompts to ChatGPT
+  chat    Start chat with ChatGPT
 ```
 
 The usage is very simple:
@@ -57,18 +54,18 @@ The usage is very simple:
 [**Single prompt**][promptVideo]
 
 ```bash
-clibard prompt "what is ram memory?"
+cligpt prompt "what is ram memory?"
 ```
 
 [**Chat**][chatVideo]
 
 ```bash
-clibard chat
+cligpt chat
 ```
 
 ## License
 
-This CLI application is open source, licensed over GPL-3
+This CLI application is FOSS, licensed over GPL-3! Enjoy!
 
-[promptVideo]: https://asciinema.org/a/Bpc3fE1YwgfEUrqUwI9FlS8ky
-[chatVideo]: https://asciinema.org/a/GKS9Scaza5c1powm8jypQrGAN
+<!-- [promptVideo]: https://asciinema.org/a/Bpc3fE1YwgfEUrqUwI9FlS8ky
+[chatVideo]: https://asciinema.org/a/GKS9Scaza5c1powm8jypQrGAN -->

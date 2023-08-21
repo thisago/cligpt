@@ -1,10 +1,9 @@
-## ChatGPT CLI (Based in clibard)
+## ChatGPT CLI
 import std/asyncdispatch
 from std/strutils import join, repeat
 from std/os import sleep
 from std/random import randomize, rand
 from std/strformat import fmt
-from std/sugar import collect
 import std/terminal
 
 import pkg/dirtygpt
