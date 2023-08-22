@@ -32,25 +32,15 @@ proc createDirtyGpt(verbose = false): DirtyGpt =
   if verbose:
     echo "Waiting at least one userscript client to connect"
   while result.connectedClients == 0:
-    sleep(500)
     poll()
   if verbose:
     echo "Successfully connected!"
-
-proc waitClients(gpt: DirtyGpt) =
-  if gpt.connectedClients == 0:
-    styledEcho fgRed, "All clients disconnected.", fgDefault, " Please keep open https://chat.openai.com"
-    while gpt.connectedClients == 0:
-      sleep(500)
-      poll()
-    styledEcho fgGreen, fmt"Success!", fgDefault, " {gpt.connectedClients} clients was connected"
 
 proc cliPrompt(texts: seq[string]; instant = true; fast = false; verbose = false) =
   ## Prompts to ChatGPT
   var gpt = createDirtyGpt(verbose)
   let text = texts.join " "
   if text.len > 0:
-    gpt.waitClients()
     let response = waitFor gpt.prompt text
     typingEcho(response, instant, fast)
   stop gpt
@@ -69,7 +59,6 @@ proc cliChat(instant = false; fast = false; verbose = false) =
         if text.len > 0:
           if text == "exit":
             break loop
-          gpt.waitClients()
           let response = waitFor gpt.prompt text
           stdout.styledWrite fgBlue, "ChatGPT: "
           typingEcho(response, instant, fast)
