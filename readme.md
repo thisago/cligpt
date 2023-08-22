@@ -10,9 +10,10 @@
 
 ## About
 
-<!-- See this app in action here:
+See this app in action here:
+- [Youtube video][youtubeVideo]
+- [`cligpt chat`][chatVideo]
 - [`cligpt prompt`][promptVideo]
-- [`cligpt chat`][chatVideo] -->
 
 This is a Google Bard CLI application interface.
 
@@ -67,5 +68,6 @@ cligpt chat
 
 This CLI application is FOSS, licensed over GPL-3! Enjoy!
 
-<!-- [promptVideo]: https://asciinema.org/a/Bpc3fE1YwgfEUrqUwI9FlS8ky
-[chatVideo]: https://asciinema.org/a/GKS9Scaza5c1powm8jypQrGAN -->
+[youtubeVideo]: https://youtube.com/watch?v=bx3CoAGnNwo
+[chatVideo]: https://asciinema.org/a/gbAxD69b1cUkmVHTEtznVsR27
+[promptVideo]: https://asciinema.org/a/VYWg0kFf6OtjKeze83QPMrpWM
