@@ -19,7 +19,7 @@ This is a Google Bard CLI application interface.
 
 Core libs used
 
-- [DirtyGPT](https://github.com/thisago/dirtygpt) - Free amd dirty ChatGPT web implementation
+- [DirtyGPT](https://github.com/thisago/dirtygpt) - Free and dirty ChatGPT web implementation
 
 ## Setup
 
