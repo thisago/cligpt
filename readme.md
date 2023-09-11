@@ -15,7 +15,7 @@ See this app in action here:
 - [`cligpt chat`][chatVideo]
 - [`cligpt prompt`][promptVideo]
 
-This is a Google Bard CLI application interface.
+This is a Free ChatGPT CLI application interface.
 
 Core libs used
 
